@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/drawer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-slider.css">
+    <link rel="stylesheet" href="css/form.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+    <!-- drawer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.drawer').drawer();
+        });
+    </script>
+
+
+
+    <!-- ソート機能 -->
+    <script type="text/javascript">
+        $(function () {
+            $('#gallery').mixItUp();
+        });
+    </script>
+
+    <title>金町理科大商店会｜アクセス</title>
+</head>
+
+<body class="drawer drawer--left">
+    <header class="header">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li class=""><a class="drawer-menu-item" href="about.html">金町理科大商店会とは</a></li>
+                <li class=""><a class="drawer-menu-item" href="spot.html">おすすめスポット紹介</a></li>
+                <li class=""><a class="drawer-menu-item" href="shop.html">店舗一覧</a></li>
+                <li class=""><a class="drawer-menu-item" href="access.html">アクセス</a></li>
+                <li class=""><a class="drawer-menu-item" href="https://twitter.com/" target="_blank"><img
+                            src="images/twitter_white.png" alt="" class="nav__icon--twitter"></a></li>
+                <li class=""><a class="drawer-menu-item" href="https://www.instagram.com/" target="_blank"><img
+                            src="images/instagram_white.png" alt="" class="nav__icon--instagram"></a></li>
+            </ul>
+        </nav>
+
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">金町理科大商店会とは</a></li>
+                <li class="nav"><a href="spot.html">おすすめスポット紹介</a></li>
+                <li class="nav current-page"><a href="shop.html">店舗一覧</a></li>
+                <li class="nav"><a href="access.html">アクセス</a></li>
+                <div class="nav__icon">
+                    <li class="nav__icon__list"><a href="https://twitter.com/" target="_blank"><img
+                                src="images/twitter_white.png" alt="" class="nav__icon--twitter"></a></li>
+                    <li class="nav__icon__list"><a href="https://www.instagram.com/" target="_blank"><img
+                                src="images/instagram_white.png" alt="" class="nav__icon--instagram"></a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="color-line">
+            <div class="color-2"></div>
+            <div class="color-3"></div>
+            <div class="color-4"></div>
+            <div class="color-5"></div>
+            <div class="color-6"></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="title">
+            <img src="images/cap.png" alt="" class="title--icon">
+            <h2 class="title__text--spot">店舗一覧</h2>
+        </div>
+    </section>
+
+    <div class="shop__caption ">
+        <div class="shop__caption__img"><img src="images/shop__main.png" alt="" class="shop__caption__img--img"></div>
+        <div class="shop__caption__title"><img src="images/shop__logo.png" alt="" class="shop__caption--logo">
+            <p class="shop__caption--text">
+                金町理科大商店会は『東京理科大学』と <br>
+                『葛飾にいじゅくみらい公園』に隣接している 商店街です。<br>
+                商店街でお買い物をした後、 <br>
+                公園にて散歩などを楽しむといった光景が 日常的です。 <br>
+                現在行われている大開発による <br>
+                ショッピングモールの完成がとても楽しみな 商店街です。 <br>
+                金町理科大商店会は、金町で一番発展していく<br>
+                ハイセンスな商店街です。</p>
+        </div>
+    </div>
+
+    <!-- shop category -->
+    <div class="shop__category__wrap">
+        <ul class="shop__category">
+            <p class="shop__category--sort">絞り込む</p>
+            <li><a href="#" class="filter" data-filter="all">
+                    <p class="shop__category--all">すべて</p>
+                </a></li>
+            <li><a href="#" class="filter" data-filter=".buy">
+                    <p class="shop__category--buy">お買い物</p>
+                </a></li>
+            <li><a href="#" class="filter" data-filter=".gourmet">
+                    <p class="shop__category--gourmet">グルメ</p>
+                </a></li>
+            <li><a href="#" class="filter" data-filter=".service">
+                    <p class="shop__category--service">サービス</p>
+                </a></li>
+        </ul>
+    </div>
+
+    <ul id="gallery" class="shop__list">
+        <li class="shop__img mix buy">
+            <img src="images/shop_1.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--buy">お買い物</p>
+                    <h2 class="shop__name">酒ヤマニ</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix service">
+            <img src="images/shop_2.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--service">サービス</p>
+                    <h2 class="shop__name">ソフトバンク</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix gourmet">
+            <img src="images/shop_3.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--gourmet">グルメ</p>
+                    <h2 class="shop__name">惣菜弁当おかず屋</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix service">
+            <img src="images/shop_4.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--service">サービス </p>
+                    <h2 class="shop__name">Smile hair</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix service">
+            <img src="images/shop_5.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--service">サービス</p>
+                    <h2 class="shop__name">docomo</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix gourmet">
+            <img src="images/shop_6.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--gourmet">グルメ</p>
+                    <h2 class="shop__name">油そば　ツボミ</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix buy">
+            <img src="images/shop_7.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--buy">お買い物</p>
+                    <h2 class="shop__name">ココカラファイン</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix gourmet">
+            <img src="images/shop_8.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--gourmet">グルメ</p>
+                    <h2 class="shop__name">DOUTOR</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix gourmet">
+            <img src="images/shop_9.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--gourmet">グルメ</p>
+                    <h2 class="shop__name">からあげ金町酒場</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+
+        <li class="shop__img mix gourmet">
+            <img src="images/shop_10.png" alt="" class="shop__img--img">
+            <div class="shop__info">
+                <div class="shop__title">
+                    <p class="shop__title--category shop__title--category--gourmet">グルメ</p>
+                    <h2 class="shop__name">KFC</h2>
+                </div>
+                <p class="shop__name__caption">開店 10：00　閉店 22：00 <br>
+                    TEL 080-1234-5678
+                </p>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+    <footer class="footer">
+        <img src="images/footer-img.png" alt="" class="footer__img">
+        <div class="footer__text">
+            <p>&copy; 2022 Kanamachi street All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

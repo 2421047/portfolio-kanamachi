@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/drawer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-slider.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+
+    <!-- drawer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.drawer').drawer();
+        });
+    </script>
+
+    <!-- bgslider -->
+    <script>
+        jQuery(function ($) {
+            $('.bg-slider').bgSwitcher({
+                images: ['images/main1.JPG', 'images/main2.JPG'], // 切替背景画像を指定
+                interval: 5000, // 背景画像を切り替える間隔を指定 3000=3秒
+                loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+                shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+                effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+                duration: 500, // エフェクトの時間を指定します。
+                easing: "swing" // エフェクトのイージングをlinear,swingから指定
+            });
+        });
+    </script>
+
+    <title>金町理科大商店会｜ホーム</title>
+</head>
+
+<body class="drawer drawer--left bg-img">
+    <header class="header">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li class=""><a class="drawer-menu-item" href="about.html">金町理科大商店会とは</a></li>
+                <li class=""><a class="drawer-menu-item" href="spot.html">おすすめスポット紹介</a></li>
+                <li class=""><a class="drawer-menu-item" href="shop.html">店舗一覧</a></li>
+                <li class=""><a class="drawer-menu-item" href="access.html">アクセス</a></li>
+                <li class=""><a class="drawer-menu-item" href="https://twitter.com/" target="_blank"><img
+                            src="images/twitter_white.png" alt="" class="nav__icon--twitter"></a></li>
+                <li class=""><a class="drawer-menu-item" href="https://www.instagram.com/" target="_blank"><img
+                            src="images/instagram_white.png" alt="" class="nav__icon--instagram"></a></li>
+            </ul>
+        </nav>
+
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">金町理科大商店会とは</a></li>
+                <li class="nav"><a href="spot.html">おすすめスポット紹介</a></li>
+                <li class="nav"><a href="shop.html">店舗一覧</a></li>
+                <li class="nav"><a href="access.html">アクセス</a></li>
+                <div class="nav__icon">
+                    <li class="nav__icon__list"><a href="https://twitter.com/" target="_blank"><img
+                                src="images/twitter_white.png" alt="" class="nav__icon--twitter"></a></li>
+                    <li class="nav__icon__list"><a href="https://www.instagram.com/" target="_blank"><img
+                                src="images/instagram_white.png" alt="" class="nav__icon--instagram"></a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="color-line">
+            <div class="color-2"></div>
+            <div class="color-3"></div>
+            <div class="color-4"></div>
+            <div class="color-5"></div>
+            <div class="color-6"></div>
+        </div>
+    </header>
+
+    <div class="bg-slider">
+        <div class="bg-slider__font">
+            <h1 class="bg-slider__title">ふらっと立ち寄って。<br>
+                ぶらぶら歩いて楽しい。<br>
+                それが金町理科大商店街。</h1>
+            <div class="bg-slider__text__contact">
+                <p class="bg-slider__text">新しく生まれ変わる街、金町で楽しくお買い物</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="title">
+            <img src="images/cap.png" alt="" class="title--icon">
+            <h2 class="title__text--spot">おすすめスポット紹介</h2>
+        </div>
+        <p class="title__caption--spot">
+            商店街でお買い物をした後、 公園にて散歩などを楽しむといった光景が 日常的です。<br>
+            現在行われている大開発による ショッピングモールの完成がとても楽しみな商店街！
+        </p>
+
+        <div class="home__spot">
+            <div class="home__spot__list"><a href="spot.html#spot1"><img src="images/spot1.JPG" alt=""
+                        class="home__spot--img">
+                    <p class="home__spot--caption">新宿みらい公園</p>
+                </a>
+            </div>
+            <div class="home__spot__list"><a href="spot.html#spot2"><img src="images/spot2.JPG" alt=""
+                        class="home__spot--img">
+                    <p class="home__spot--caption">水元公園</p>
+                </a>
+            </div>
+            <div class="home__spot__list"><a href="spot.html#spot3"><img src="images/spot3.JPG" alt=""
+                        class="home__spot--img">
+                    <p class="home__spot--caption">ベルトーレ金町</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="title">
+            <img src="images/cap.png" alt="" class="title--icon">
+            <h2 class="title__text--spot">店舗紹介</h2>
+        </div>
+
+        <div class="home__shop">
+            <div class="home__shop--list">
+                <div class="home__shop--buy"><a href="shop.html">
+                        <p class="home__shop--category">お買い物</p>
+                </div><img src="images/category-1.png" alt="" class="home__shop--img"></a>
+            </div>
+            <div class="home__shop--list">
+                <div class="home__shop--gourmet"><a href="shop.html">
+                        <p class="home__shop--category">グルメ</p>
+                </div><img src="images/category-2.png" alt="" class="home__shop--img"></a>
+            </div>
+            <div class="home__shop--list"><a href="shop.html">
+                    <div class="home__shop--service">
+                        <p class="home__shop--category">サービス</p>
+                    </div><img src="images/category-3.png" alt="" class="home__shop--img">
+                </a>
+            </div>
+        </div>
+        <p class="home__shop--text">
+            金町理科大商店街は会員数全37店からなる、『東京理科大学』と<br>
+            『葛飾にいじゅくみらい公園』に隣接している 商店街です。<br>
+            お買い物や美味しいグルメ、様々なサービスがありますので、ぜひ一度お立ち寄りください。
+        </p>
+    </section>
+
+    <section>
+        <div class="title">
+            <img src="images/cap.png" alt="" class="title--icon">
+            <h2 class="title__text--spot">アクセスマップ</h2>
+        </div>
+    </section>
+
+    <div class="home__map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.221242349554!2d139.86649901598545!3d35.76994133270753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018851964127197%3A0x2107d5442f092e19!2z6YeR55S655CG56eR5aSn5ZWG5bqX5Lya!5e0!3m2!1sja!2sjp!4v1667239378570!5m2!1sja!2sjp"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="footer">
+        <img src="images/footer-img.png" alt="" class="footer__img">
+        <div class="footer__text">
+            <p>&copy; 2022 Kanamachi street All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
